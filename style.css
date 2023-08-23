@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #333;
+    font-family: monospace;
+  }
+
+  /* DEMO-SPECIFIC STYLES */
+  .typewriter h1 {
+    color: #fff;
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+  animation: typing 6s steps(30, end) infinite, /* 2 vezes para digitar e apagar */
+             blink-caret .5s step-end infinite;
+    text-align: center;
+  }
+
+  @keyframes typing {
+  0%, 100% {
+    width: 0; /* Começa e termina com largura zero para apagar */
+  }
+  50% {
+    width: 100%; /* No meio, a largura é 100% para digitar */
+  }
+}
+
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+  }
+
+  .subtitle {
+    color: #fff; /* Cor branca */
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .social-icons a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s;
+    margin-right: 10px;
+  }
+
+  .social-icons a:hover {
+    color: orange;
+  }
